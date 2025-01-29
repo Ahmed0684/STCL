@@ -1,39 +1,43 @@
-Market Mate:   
+# Market Mate:   
 Critical Questions for Testing New Features:
 
-1. Product Rating System.
+### 1. Product Rating System.
 
-New features
+**Vague Requirement:**
+Users should be able to rate products with a 5-star system and have the option to add written feedback.
 
-1. Age Restriction for Account Creation.
+**Questions:**
 
-Vague Requirement:
+- Could users submit a star rating without adding written feedback? If so, how is it displayed?
+- Is it possible to submit multiple reviews for the same product? If not, how is this prevented?
+- How does the system handle edge cases, such as partial star ratings (e.g., 4.5 stars)?
 
--> Users should be able to rate products with a 5-star system and have the option to add written feedback.
-
-Questions:
-
-Could users submit a star rating without adding written feedback? If so, how is it displayed?
-Is it possible to submit multiple reviews for the same product? If not, how is this prevented?
-How does the system handle edge cases, such as partial star ratings (e.g., 4.5 stars)?
-
-Detailed requirements:
+**Detailed requirement:**
 
 Users can rate a product by selecting between 1 and 5 stars, rating options should be interactive and visually intuitive.
 Users can also submit a rating without leaving written feedback.
 
-2. Age Verification for Alcoholic Products
+### 2. Age Verification for Alcoholic Products
 
-Vague Requirement:
+**Vague Requirement:**
 
 -> Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
 
-Questions:
+**Questions:**
 
-Does the age verification modal always appear when accessing the alcoholic products category?
-Can users bypass the modal and access alcoholic products without inputting their age?
-Is the modal visible and responsive across different devices and screen sizes?
-Can users close the modal without completing the verification, and what happens in such cases?
+ - Does the age verification modal always appear when accessing the
+   alcoholic products category? 
+  
+ - Can users bypass the modal and access    alcoholic products without
+   inputting their age?
+
+ 
+
+ - Is the modal visible   and responsive across different devices and
+   screen sizes?
+ - Can users close the modal without completing the verification, and
+   what happens  in such cases?
+
 Detailed requirement:
 
 Age Verification for Alcoholic Products.
