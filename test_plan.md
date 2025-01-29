@@ -1,56 +1,132 @@
-Market Mate:   
-Critical Questions for Testing New Features:
+# Test Plan for Grocery Website
+## Objective:
+- The goal of this test plan is to ensure that the basic functionalities of the grocery website work correctly.<br>
+- This includes user registration, product search, adding items to the cart, and the checkout process.
 
-1. Product Rating System.
+### What will be tested:
 
-New features
+- User Registration and Login
+- Searching for Products
+- Adding Products to the Cart
+- Checking Out and Making Payments
+- Adding Favorites
+- User Profile Management
+- Adding Promotions
+   
+## Analyze the Product:
 
-1. Age Restriction for Account Creation.
+### Objective:
 
-Vague Requirement:
+The primary objective of the grocery website is to provide users with a seamless shopping experience, from searching for products to completing purchases.
 
--> Users should be able to rate products with a 5-star system and have the option to add written feedback.
+### User Base:
 
-Questions:
+The product will be used by a wide range of users, including individuals who prefer online grocery shopping.
+It should cater to users on various devices such as PCs, laptops, smartphones, and tablets.
 
-Could users submit a star rating without adding written feedback? If so, how is it displayed?
-Is it possible to submit multiple reviews for the same product? If not, how is this prevented?
-How does the system handle edge cases, such as partial star ratings (e.g., 4.5 stars)?
+## Hardware and Software Specifications
 
-Detailed requirements:
+### Hardware Requirements:
 
-Users can rate a product by selecting between 1 and 5 stars, rating options should be interactive and visually intuitive.
-Users can also submit a rating without leaving written feedback.
+- Devices: PCs, laptops, smartphones, tablets
+Specifications: Standard configurations for Android and iOS devices,
+Software Requirements:
 
-2. Age Verification for Alcoholic Products
+- Operating Systems: Windows, macOS, Android, iOS
+Browsers: Chrome, Firefox, Safari, Edge
+Dependencies: Payment gateways, backend services
+Product Functionality
 
-Vague Requirement:
+## The product allows users to:
 
--> Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
+- Register and log in
+- Search and filter products
+- Add products to the cart
+- Complete the checkout process
+- Manage favorites and user profiles
+- Apply promotions during checkout
+   
+## Test Strategy:
 
-Questions:
+### Scope of Testing:
 
-Does the age verification modal always appear when accessing the alcoholic products category?
-Can users bypass the modal and access alcoholic products without inputting their age?
-Is the modal visible and responsive across different devices and screen sizes?
-Can users close the modal without completing the verification, and what happens in such cases?
-Detailed requirement:
+#### In scope
 
-Age Verification for Alcoholic Products.
-The purpose is to ensure compliance with legal regulations by verifying a user’s age before granting access to alcoholic products. Prevent underage users from browsing or purchasing restricted products.
-3. Shipping Cost Changes:
+- User Registration and Login
+- Product Search and Filtering
+- Adding Products to Cart
+- Checkout Process
+- Favorites Feature
+- User Profile Management
+- Promotions and Discounts
 
-Vague Requirement:
+#### Out of Scope:
 
--> Free shipping is available for orders above a certain amount. Orders below this amount will incur a shipping fee.
+Backend operations not affecting the user interface
+Integration with third-party payment gateways (unless directly related to checkout)
 
-Questions:
+#### Type of Testing
 
-Is the correct shipping fee displayed for orders below the free shipping threshold?
-Is free shipping automatically applied when the order total exceeds the threshold?
-Are changes to the shipping cost dynamically updated as items are added or removed from the basket?
-Detailed Requirement:
+- [x] Manual Testing
+- [x] Basic Automation (Optional)
+- [x] Functional Testing
+- [x] Regression Testing
+- [x] Usability Testing
+- [x] Risks and Issues
 
-Set a configurable threshold amount for free shipping (e.g., $50).
-Orders with a total value (before shipping) equal to or greater than the threshold will qualify for free shipping.
-Orders below this threshold will incur a standard shipping fee.
+Delays in feature development
+Mitigation: Adjust the testing schedule accordingly.
+Limited access to various devices
+Mitigation: Focus on testing on the most common devices and browsers.
+
+### Test Objectives:
+
+#### Objectives:
+
+Functionality: Ensure all core functionalities work as intended.
+
+GUI: 
+Verify that the graphical user interface is user-friendly and responsive.
+Usability: Assess the ease of use for all website features.
+
+#### Expected Outcomes
+
+Functionality: All tested features perform correctly according to specifications.
+GUI: The interface is intuitive and responsive.
+Usability: Users can navigate and use the website easily.
+5. Test Criteria
+Suspension Criteria
+
+Testing will be suspended if critical defects are found that block further testing.
+Lack of necessary resources or test environment failures.
+
+#### Exit Criteria
+
+All planned tests have been executed.
+At least 90% of executed test cases have passed.
+All critical defects have been resolved.
+No severity 1 or severity 2 defects remain open.
+
+### Resource Planning
+#### Human Resources:
+
+- Test Manager
+- QA Engineers
+- Hardware:
+- PCs, laptops, smartphones, tablets
+- Software:
+- Browsers: Chrome, Firefox, Safari, Edge
+- Operating Systems: Windows, macOS, Android, iOS
+- Infrastructure:
+- Test environments with real devices and browsers
+
+### Plan Test Environment
+#### Test Environments:
+
+- [x] Development (DEV)
+- [x] Testing (TEST)
+- [x] Acceptance (ACC)
+- [x] Production (PROD)
+- [x] Environment Setup:
+
+Real devices with installed browsers and operating systems to simulate user conditions.
