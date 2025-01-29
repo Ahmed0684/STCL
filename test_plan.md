@@ -1,7 +1,7 @@
 # Test Plan for Grocery Website
 ## Objective:
-- The goal of this test plan is to ensure that the basic functionalities of the grocery website work correctly.<br>
-- This includes user registration, product search, adding items to the cart, and the checkout process.
+The goal of this test plan is to ensure that the basic functionalities of the grocery website work correctly.<br>
+This includes user registration, product search, adding items to the cart, and the checkout process.
 
 ### What will be tested:
 
@@ -28,23 +28,24 @@ It should cater to users on various devices such as PCs, laptops, smartphones, a
 
 ### Hardware Requirements:
 
-- Devices: PCs, laptops, smartphones, tablets
+Devices: PCs, laptops, smartphones, tablets
 Specifications: Standard configurations for Android and iOS devices,
-Software Requirements:
+
+## Software Requirements:
 
 - Operating Systems: Windows, macOS, Android, iOS
-Browsers: Chrome, Firefox, Safari, Edge
-Dependencies: Payment gateways, backend services
-Product Functionality
+- Browsers: Chrome, Firefox, Safari, Edge
+- Dependencies: Payment gateways, backend services
+- Product Functionality
 
 ## The product allows users to:
 
-- Register and log in
+- Register and login
 - Search and filter products
 - Add products to the cart
 - Complete the checkout process
 - Manage favorites and user profiles
-- Apply promotions during checkout
+- Apply for promotions during checkout
    
 ## Test Strategy:
 
@@ -54,7 +55,7 @@ Product Functionality
 
 - User Registration and Login
 - Product Search and Filtering
-- Adding Products to Cart
+- Adding Products to the Cart
 - Checkout Process
 - Favorites Feature
 - User Profile Management
