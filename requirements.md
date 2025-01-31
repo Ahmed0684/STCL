@@ -38,23 +38,29 @@ Users can also submit a rating without leaving written feedback.
  - Can users close the modal without completing the verification, and
    what happens  in such cases?
 
-Detailed requirement:
+**Detailed requirement:**
 
 Age Verification for Alcoholic Products.
-The purpose is to ensure compliance with legal regulations by verifying a user’s age before granting access to alcoholic products. Prevent underage users from browsing or purchasing restricted products.
-3. Shipping Cost Changes:
+The purpose is to ensure compliance with legal regulations by verifying a user's age before granting access to alcoholic products. Prevent underage users from browsing or purchasing restricted products.
 
-Vague Requirement:
 
--> Free shipping is available for orders above a certain amount. Orders below this amount will incur a shipping fee.
+### 3. Shipping Cost Changes:
+**Vague Requirement:**
 
-Questions:
+Free shipping is available for orders above a certain amount. Orders below this amount will incur a shipping fee.
 
-Is the correct shipping fee displayed for orders below the free shipping threshold?
-Is free shipping automatically applied when the order total exceeds the threshold?
-Are changes to the shipping cost dynamically updated as items are added or removed from the basket?
-Detailed Requirement:
+**Questions:**
 
-Set a configurable threshold amount for free shipping (e.g., $50).
-Orders with a total value (before shipping) equal to or greater than the threshold will qualify for free shipping.
-Orders below this threshold will incur a standard shipping fee.
+- Is the correct shipping fee displayed for orders below the free shipping threshold?
+- Is free shipping automatically applied when the order total exceeds the threshold?
+- Are changes to the shipping cost dynamically updated as items are added or removed from the basket?
+
+**Detailed Requirement:**
+
+Set a configurable threshold amount for free shipping (e.g., $50). Orders with a total value (before shipping) equal to or greater than the threshold will qualify for free shipping. Orders below this threshold will incur a standard shipping fee.
+
+
+
+
+
+
