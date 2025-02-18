@@ -6,14 +6,14 @@ Test Design Techniques: Boundary Value Analysis, Equivalence Partitioning, Error
 
 ### Boundary Value Analysis(BVA),
 
-**Test Case: ** Verify submitting a 5-star rating 
+**Test Case:** Verify submitting a 5-star rating 
 
 - Input: select 5 stars
 - Expected outcome: Rating is selected and displayed correctly
 
 Equivalence Equivalence partitioning(EP),error Guessing
 
-**Test Cases:** Verify submitting a 1-star rating
+**Test Cases: Verify submitting a 1-star rating
 
 - Input: select 1 star
 - Expected outcome: Rating is selected and displayed correctly
