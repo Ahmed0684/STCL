@@ -1,87 +1,95 @@
-# User Registration and Login
+# Test Case design: GroceryMate
+The software under test is https://grocerymate.masterschool.com
 
-## Test Cases:
+## Product Rating System
+Test Design Techniques: Boundary Value Analysis, Equivalence Partitioning, Error Guessing 
 
-### Test Case 1: 
-Verify that a new user can create an account with a valid email and password.
+### Boundary Value Analysis(BVA),
 
-Input: Enter a valid email and a password. Expected Outcome: Account creation is successful, user is logged in.
+**Test Case: ** Verify submitting a 5-star rating 
 
-### Test Case 2: 
-Verify that an error message is shown if the email is in an incorrect format.
+- Input: select 5 stars
+- Expected outcome: Rating is selected and displayed correctly
 
-Input: Enter an email without "@" (e.g., "useremail.com"). Expected Outcome: Error message "Invalid email format."
+Equivalence Equivalence partitioning(EP),error Guessing
 
-### Test Case 3: 
-Verify that a user can log in with the correct credentials.
+**Test Cases:** Verify submitting a 1-star rating
 
-Input: Enter the correct email and password. Expected Outcome: The user is logged in successfully. 
+- Input: select 1 star
+- Expected outcome: Rating is selected and displayed correctly
 
-### Test Case 4:
+### Feature 2: Shipping Cost Changes
 
- Verify that an error message is shown if the wrong password is entered.
+- Test Design Techniques: Boundary Value Analysis, Equivalence Partitioning, Error Guessing
 
-Input: Enter a valid email and an incorrect password. Expected Outcome: Error message "Incorrect password."
+#### Boundary Value Analysis
 
-  ## Product Search and Filtering Test Cases:
+** Test Case:** Verify that free shipping is applied if the total product cost is greater than or equal to 20 euros
+- Input: add products to the cart so that the total cost exceeds 20 euros
+- Expected outcome: No shipping cost is applied
 
-  
-### Test Case 1: 
-Verify that the user can search for a product by name.
+** Test Case:** Verify that the shipping fee is applied if the total cost is less than 20 euros 
+Expected outcome: correct shipping fee is applied
 
-Input: Enter "Celery" in the search bar. Expected Outcome: A list of products containing "Celery" is displayed.
+#### Error Guessing
 
-### Test Case 2: 
-Verify that the user sees a message if no products match the search term.
+** Test Case:** Verify that the shipping cost is applied when the items are removed from the cart and the total cost becomes less than 20 euros
+- Input: add products then try decreasing the quantity of the products from the cart so that the total cost becomes less than 20 euros 
+- Expected outcome: shipping cost is applied correctly based on the new total cost
 
-Input: Enter "Xyzabc" in the search bar. Expected Outcome: The message "No products found" is displayed.
+** Test Case:** Verify that the shipping fee is when the quantity of items is increased from the cart and the total cost becomes greater than 20 euros
+- input: add products then try increasing the quantity of the products from the cart so that the total cost becomes greater than 20 euro  
+- Expected outcome: correct shipping becomes free
 
-### Test Case 3: 
-Verify that the price filter works correctly.
-
-Input: Set price filter to $10 - $20. Expected Outcome: Only products priced between $10 and $20 are displayed.
-
-### Adding Products to the Cart Test Cases:
-
-### Test Case 1:  
+#### Adding Products to the Cart:
+** Test Case 1:** 
 Verify that a user can add a product to the cart.
 
-Input: Click "Add to Cart" on a product page. Expected Outcome: The product is added to the cart. 
-### Test Case 2: 
+- Input: Click "Add to Cart" on a product page. Expected Outcome: The product is added to the cart. 
+
+** Test Case 2:** 
 Verify that the cart updates when multiple quantities are added.
 
-Input: Add 3 units of the same product. Expected Outcome: The cart shows 3 units of the product. 
-### Test Case 3: 
-Verify that an error is shown when trying to add 0 quantity.
+- Input: Add 3 units of the same product. 
+- Expected Outcome: The cart shows 3 units of the product. 
 
-Input: Set quantity to 0 and try to add to cart. Expected Outcome: Error message "Quantity must be at least 1."
+#### Error Guessing :
 
-## Checkout Process Test Cases:
+** Test case:**
+ Verify that an error is shown when trying to add 0 quantity.
 
-### Test Case 1: 
-Verify that the user can proceed to checkout with products in the cart.
+- Input: Set quantity to 0 and try to add to cart. 
+- Expected Outcome: Error message "Quantity must be at least 1."
 
-Input: Click "Checkout" with items in the cart. Expected Outcome: The user is directed to the checkout page.
+#### Checkout Process Test Cases:
 
-### Test Case 2: 
-Verify that the user can complete a purchase with valid payment details.
+** Test Case 1:** Verify that the user can proceed to checkout with products in the cart.
 
-Input: Enter valid credit card information. Expected Outcome: Payment is successful, and order confirmation is displayed.
+- Input: Click "Checkout" with items in the cart.
+-  Expected Outcome: The user is directed to the checkout page.
 
-### Test Case 3: 
-Verify that an error message is shown if the payment method is invalid.
+** Test Case 2:**
+ verify that the user can complete a purchase with valid payment details.
 
-Input: Enter an expired credit card. Expected Outcome: Error message "Payment failed."
+- Input: Enter valid credit card information. 
+- Expected Outcome: Payment is successful, and order confirmation is displayed.
 
-## Adding Favorites Test Cases:
+** Test Case 3/ Error Guessing:** 
+ Verify that an error message is shown if the payment method is invalid.
 
-### Test Case 1: 
-Verify that a user can add a product to favorites.
+-Input: Enter an expired credit card. -
+Expected Outcome: Error message "Payment failed."
 
-Input: Click "Add to Favorites" on a product page. Expected Outcome: The product is added to the favorites list. 
+#### Adding Favorites:
 
-### Test Case 2: 
+**Test Case 1:**
+ Verify that a user can add a product to favorites.
+
+- Input: Click "Add to Favorites" on a product page.  
+- Expected Outcome: The product is added to the favorites list. 
+
+**Test Case 2:** 
 Verify that an error is shown if trying to add a product to favorites without logging in.
 
-Input: Try to add a product to favorites without being logged in. Expected Outcome: Prompt to log in or error message.
-
+- Input: Try to add a product to favorites without being logged in. 
+- Expected Outcome: Prompt to log in or error message.
