@@ -91,26 +91,52 @@ Functionality: All tested features perform correctly according to specifications
 Testing will be suspended if critical defects are found that block further testing. 
 Lack of necessary resources or test environment failures.
 
-### Exit Criteria:
-All planned tests have been executed. At least 90% of executed test cases have passed. All critical defects have been resolved. No severity 1 or severity 2 defects remain open.
 
-- Resource Planning
-- Human Resources:
-- Test Manager
-- QA Engineers
-- Hardware:
-- PCs, laptops, smartphones, tablets
-- Software:
-- Browsers: Chrome, Firefox, Safari, Edge
-- Operating Systems: Windows, macOS, Android, iOS
-- Infrastructure:
-- Test environments with real devices and browsers
-- Plan Test Environment
-- Test Environments:
-- Development (DEV)
-- Testing (TEST)
-- Acceptance (ACC)
-- Production (PROD)
+**Exit Criteria**
 
- Environment Setup:
-Real devices with installed browsers and operating systems to simulate user conditions.
+- All planned tests have been executed.
+- Run Rate: At least 95% of all test cases have been executed.
+- Pass Rate: At least 90% of executed test cases have passed.
+- All critical and high-priority defects have been resolved and closed.
+- No severity 1 or severity 2 defects are open.
+- Performance metrics meet the defined standards.
+- Security vulnerabilities have been identified and addressed.
+- User acceptance testing has been completed, and sign-off has been obtained.
+
+### Resource Planning:
+
+- **Human Resources:** QA team, development team, end users for UAT
+- **Hardware:** PCs, laptops, smartphones, tablets
+- **Software:** Browsers (Chrome, Firefox, Safari, Edge), operating systems (Windows, macOS, Android, iOS)
+- **Infrastructure:** Test environments, automation tools, performance testing tools
+
+### Plan Test Environment:
+
+**Test Environments:** Real devices installed with real browsers and operating systems to simulate user conditions.
+**Environments:** Development (DEV), Testing (TEST), Acceptance (ACC), Production (PROD)
+
+### **7. Schedule and Estimation**
+
+| Activity | Start Date | End Date | Environment | Responsible Person | Estimated Effort |
+| --- | --- | --- | --- | --- | --- |
+| Test Planning | 01/08/2024 | 05/08/2024 | All | Test Manager | 20 hours |
+| Test Case Design | 06/08/2024 | 15/08/2024 | All | QA Team | 40 hours |
+| Unit Testing | 16/08/2024 | 25/08/2024 | DEV | Development Team | 60 hours |
+| Integration Testing | 26/08/2024 | 30/08/2024 | TEST | QA Team | 30 hours |
+| System Testing | 01/09/2024 | 10/09/2024 | TEST | QA Team | 80 hours |
+| Regression Testing | 11/09/2024 | 15/09/2024 | TEST | QA Team | 40 hours |
+| Performance Testing | 16/09/2024 | 18/09/2024 | TEST | QA Team | 20 hours |
+| Security Testing | 19/09/2024 | 21/09/2024 | TEST | QA Team | 20 hours |
+| UAT | 22/09/2024 | 30/09/2024 | ACC | End Users | 50 hours |
+| Production Release | 01/10/2024 | 01/10/2024 | PROD | DevOps Team | 10 hours |
+
+### **8. Determine Test Deliverables**
+
+Documents/tools that must be created to support testing activities in the project:
+
+- **Test Plan Document**
+- **Test Cases and Test Scripts**
+- **Test Data**
+- **Test Reports**
+- **Defect Reports**
+- **UAT Sign-off Document**
