@@ -91,7 +91,7 @@ Functionality: All tested features perform correctly according to specifications
 Testing will be suspended if critical defects are found that block further testing. 
 Lack of necessary resources or test environment failures.
 
-## Age Verification for Alcoholic Products:
+### Age Verification for Alcoholic Products:
 
 #### Equivalence Partitioning (EP):
 
