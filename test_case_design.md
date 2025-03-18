@@ -41,55 +41,21 @@ Expected outcome: correct shipping fee is applied
 - input: add products then try increasing the quantity of the products from the cart so that the total cost becomes greater than 20 euro  
 - Expected outcome: correct shipping becomes free
 
-#### Adding Products to the Cart:
-** Test Case 1:** 
-Verify that a user can add a product to the cart.
+#### Age verification:
 
-- Input: Click "Add to Cart" on a product page. Expected Outcome: The product is added to the cart. 
+** Test Case 1:** Verify that a user below the legal drinking age cannot purchase alcoholic products.
 
-** Test Case 2:** 
-Verify that the cart updates when multiple quantities are added.
-
-- Input: Add 3 units of the same product. 
-- Expected Outcome: The cart shows 3 units of the product. 
-
-#### Error Guessing :
-
-** Test case:**
- Verify that an error is shown when trying to add 0 quantity.
-
-- Input: Set quantity to 0 and try to add to cart. 
-- Expected Outcome: Error message "Quantity must be at least 1."
+- Input: Enter a date of birth that results in an age below the legal drinking age (e.g., if the limit is 21, enter a DOB that makes age 20.
+-  Expected Outcome: The system should prevent the purchase and display a message stating that the user is not old enough.
+** Test Case 2:**
+ Verify that a user exactly at the legal drinking age can purchase alcoholic products.
+- Input: Enter a date of birth that results in the exact legal drinking age (e.g., 21). 
+- Expected Outcome: The system should allow the purchase.
 
 #### Checkout Process Test Cases:
 
-** Test Case 1:** Verify that the user can proceed to checkout with products in the cart.
+** Test Case 1:** Verify that the user can checkout with products in the cart.
 
 - Input: Click "Checkout" with items in the cart.
 -  Expected Outcome: The user is directed to the checkout page.
 
-** Test Case 2:**
- verify that the user can complete a purchase with valid payment details.
-
-- Input: Enter valid credit card information. 
-- Expected Outcome: Payment is successful, and order confirmation is displayed.
-
-** Test Case 3/ Error Guessing:** 
- Verify that an error message is shown if the payment method is invalid.
-
--Input: Enter an expired credit card. -
-Expected Outcome: Error message "Payment failed."
-
-#### Adding Favorites:
-
-**Test Case 1:**
- Verify that a user can add a product to favorites.
-
-- Input: Click "Add to Favorites" on a product page.  
-- Expected Outcome: The product is added to the favorites list. 
-
-**Test Case 2:** 
-Verify that an error is shown if trying to add a product to favorites without logging in.
-
-- Input: Try to add a product to favorites without being logged in. 
-- Expected Outcome: Prompt to log in or error message.
