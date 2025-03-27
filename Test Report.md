@@ -1,1 +1,16 @@
-
+| Step* | Action                                   | Expected Outcome                                                                   | OK/NOK | URL                                       | Link to Issue |   |
+|-------|------------------------------------------|------------------------------------------------------------------------------------|--------|-------------------------------------------|---------------|---|
+| 1     | Go to Grocery Mate Mate                  | The home page is displyed                                                          | Ok     | https://groceryMate.Masterschool.com      |               |   |
+| 2     | click on login Icon                      | you are directed to the login page                                                 | Ok     | https://groceryMate.Masterschool.com/auth |               |   |
+| 3a    | Fill in username                         |                                                                                    | Ok     |                                           |               |   |
+| 3b    | Fill in password                         |                                                                                    | Ok     |                                           |               |   |
+| 3c    | click on sign in button                  | uwers redirected to the home page with in status                                   | Ok     |                                           |               |   |
+| 4     | Click on the shop menu Item              | Shop page is dis[layed                                                             | Ok     |                                           |               |   |
+| 5     | Add a product to the cart                | product is added to the cart                                                       | Ok     |                                           |               |   |
+| 5a    | Click on the cart Item                   | user will be directed to the cart page                                             | Ok     |                                           |               |   |
+| 5b    | fill the shipment and payment fields     |                                                                                    | Ok     |                                           |               |   |
+| 5c    | Click on the buy now button.                  | The product has been purchased and can now be reviewed. The user is directed to the page | Ok     |                                           |               |   |
+| 6     | click on shop Menu item                  | Shop page is displayed                                                             | Ok     |                                           |               |   |
+| 6a    | Click on the product you have purchased.  | The product page is opened with a review (Star rating and comment box).               | Ok     |                                           |               |   |
+| 6b    | Click on 5 star rating                   | 5 star rating is selected                                                          | Ok     |                                           |               |   |
+| 6c    | Click on the summit button               | the 5 star rating is submitted                                                     | Ok     |                                           |               |   |
