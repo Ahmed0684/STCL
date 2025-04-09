@@ -35,7 +35,7 @@ As a user of GroceryMate, I am able to buy a product and make shipment.
 
 
 ### scenario 3: Age verification for Alcoholic products.
-As a use. 
+Test Case 1:** Verify that a user below the legal drinking age cannot purchase alcoholic products.
 
 | 1 | Action                                         | Expected outcome                                                                 | OK/NOK | URL                                       | Link to Issue |
 |---|------------------------------------------------|----------------------------------------------------------------------------------|--------|-------------------------------------------|---------------|
