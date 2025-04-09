@@ -16,7 +16,7 @@ As a user of GroceryMate, I am able to buy a product and give a 1 star rating.
 
 
 ### scenario 2: Verify shipping cost changes.
-As a user of GroceryMate, I am able to buy a product and make shipment. 
+**Test Case:** Verify that free shipping is applied if the total product cost is greater than or equal to 20 euros
 | 1  | Action                                              | Expected outcome                                         | OK/NOK | URL                                       | Link to Issue |
 |----|-----------------------------------------------------|----------------------------------------------------------|--------|-------------------------------------------|---------------|
 | 2  | Go to login page GroceryMate                        | Login page appears                                       | OK     | https://grocerymate.masterschool.com/     |               |
