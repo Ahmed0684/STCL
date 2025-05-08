@@ -1,6 +1,6 @@
-This document contains test execution of the test cases related to https:grocerymate.masterschool.com
-### scenario 1: Verify submitting 1star rating.
-As a user of GroceryMate, I am able to buy a product and give a 1 star rating. 
+This document contains the test execution of the test cases related to https://grocerymate.masterschool.com
+### Scenario 1: Verify submitting 1-star rating.
+As a user of GroceryMate, I can buy a product and give a 1-star rating. 
 | Step# | Action                       | Expected outcome                                                   | OK/NOK | URL                                       | Link to Issue |
 |-------|------------------------------|--------------------------------------------------------------------|--------|-------------------------------------------|---------------|
 | 1     | Go to login page GroceryMate | Login page appears                                                 | OK     | https://grocerymate.masterschool.com/     |               |
@@ -9,7 +9,7 @@ As a user of GroceryMate, I am able to buy a product and give a 1 star rating.
 | 3b    | Fill in password             |                                                                    | OK     |                                           |               |
 | 3c    | click on sign in button      | user is redirefted to the homepage with logged in status           | OK     |                                           |               |
 | 4     | Click on the menu item       | shop page is displayed. |                                          | OK     |                                           |               |
-| 5     | Add a product to the cart    | product is added to to the cart and You are successfully logged in | OK     |                                           |               |
+| 5     | Add a product to the cart    | The product is added to the cart, and you are successfully logged in | OK     |                                           |               |
 
 
 
