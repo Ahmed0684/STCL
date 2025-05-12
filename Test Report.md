@@ -10,6 +10,8 @@
 | 8     | Click on your bought product and select a 1-star rating. | One star rating is successfully selected. | OK     | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47998 |               |   |   |   
 
 
+<img width="844" alt="Screenshot 2025-05-11 at 16 46 29" src="https://github.com/user-attachments/assets/87be7d4f-6fa7-4ce5-bd7a-2eda30531c86" />
+
 ### scenario 2: Verify shipping cost changes.
 **Test Case:** Verify that free shipping is applied if the total product cost is greater than or equal to 20 euros
   | step# | Action                                          | Expected outcome                                                  | Ok/NOK | URL                                                                   | Link Issue to |   |   |   |
