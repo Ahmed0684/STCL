@@ -26,6 +26,9 @@
 | 8     |  buy a product cost > 20$ to get free shipment  | the product cost is 21$ and free shipment is successfully applied | OK     |           
 
 
+<img width="618" alt="Screenshot 2025-05-12 at 23 55 30" src="https://github.com/user-attachments/assets/69d4ec12-a242-41f1-bcee-3bc2b61718eb" />
+
+
 ### Scenario 3: Age verification for Alcoholic products.
 Test Case 1:** Verify that a user below the legal drinking age cannot purchase alcoholic products.
 
