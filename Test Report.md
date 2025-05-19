@@ -75,6 +75,8 @@
  Verify that a user is of the legal drinking age and can purchase alcoholic products.
 - Input: Enter a date of birth for which the user is of legal of alcoholic drinking age ( 21 years). 
 - Expected Outcome: The system should allow the purchase.
+
+
 | 1 | Action                                         | Expected outcome                                                                 | OK/NOK | URL                                       | Link to Issue |
 |---|------------------------------------------------|----------------------------------------------------------------------------------|--------|-------------------------------------------|---------------|
 | 2 | Go to login page GroceryMate                   | Login page appears                                                               | OK     | https://grocerymate.masterschool.com/     |               |
